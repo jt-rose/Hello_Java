@@ -1,10 +1,13 @@
-public class hello {
-    public static int doubly(int x) {
-        return x + x;
+import kotlin.jvm.JvmStatic
+
+object hello {
+    fun doubly(x: Int): Int {
+        return x + x
     }
 
-    public static void main(String[] args) {
-    int doubled = doubly(10);
-    System.out.println(doubled);
+    @JvmStatic
+    fun main(args: Array<String>) {
+        val doubled = doubly(10)
+        println(doubled)
     }
 }
