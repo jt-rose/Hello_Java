@@ -1,14 +1,10 @@
 public class hello {
-    public static void main(String[] args) {
-    // hello Java!
-        System.out.println("Hello Java!");
+    public static int doubly(int x) {
+        return x + x;
+    }
 
-        // variables
-        String name = "Jeff";
-        if (name.equals("Jeff")) {
-            System.out.println("Hello " + name);
-        } else {
-            System.out.println("...who dis?");
-        }
+    public static void main(String[] args) {
+    int doubled = doubly(10);
+    System.out.println(doubled);
     }
 }
